@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login or sign</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            /* padding: 0; */
+            box-sizing:border-box;
+        }
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Roboto', sans-serif;
+        }
+        .border {
+            margin: auto;
+            margin-top: 130px;
+            width: 1000px;
+            height: auto;
+            /* background-color: red; */
+        }
+        .frame {
+            width: auto;
+            height: auto;
+            padding: 10px;
+            /* background-color: hotpink; */
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .form {
+            width: 396px;
+            height: auto;
+            background-color: #ffffff;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            
+        }
+        .input {
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #eaebed;
+            background-color: #fdfdfd;
+            outline: none;
+        }
+        .input:focus {
+            border: 1px solid #1877f2;
+        }
+
+        .btn {
+            background-color: #1877f2;
+            color: #eee8fa;
+            font-size: 20px;
+            font-weight: 20px;
+        }
+        .round {
+            border-radius: 10px;
+        }
+        .forget {
+            text-decoration: none;
+            color: #1877f2;
+            text-align:center;
+            /* margin-top: 10px; */
+            margin-bottom: 20px;
+            display:block
+
+        }
+        .forget:hover {
+            text-decoration: underline;
+        }
+        .creat {
+            background-color: #42b72a;
+            color: hsl(0, 0%, 100%);
+            display: block;
+            text-align: center;
+            
+            font-size: 18px;
+            text-decoration: none;
+            width: 196px;
+            height: 50px;
+            margin:auto;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        .sublink {
+            width: 396px;
+            height: auto;
+            text-align: center; 
+            margin-top: 20px;
+                       
+        }
+        .cp {
+            text-decoration: none;
+            color: #000000;
+            font-size: 18px;
+            font-weight: 30px;
+        }
+        .cp:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            width: 524px;
+            background-color: gold;
+            margin-right: 50px;
+            margin-top: -103px;
+
+        }
+        
+
+        .fb {
+            width: 250px;
+            margin-bottom: 15px;
+        }
+        .cont {
+            font-size: 30px;
+        }
+    /* Media Query */
+        @media screen  and (max-width: 1366px) {
+            .border {
+                margin: 150px auto;
+                width: auto;
+                height: auto;
+                background-color: red;
+            }
+            .frame {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+            .form .logo{
+                margin: 0;
+                /* box-sizing: border-box; */
+                display: block;
+            }
+            .logo {
+                
+                /* display: flex;
+                flex-direction:column;
+                justify-content: center; */
+                
+            }
+            .cont {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .fb {
+                display: block;
+                margin: auto;
+                margin-bottom: 10px;
+            }
+
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="border">
+        <div class="frame">
+
+            <div class="logo">
+                <div>
+                    <img src="./Facebook_Logo_(2019).svg.png" class="fb" alt="">
+                </div>
+                <div>
+                    <p class="cont">
+                        <span>Facebook helps you connect and share with the people in your life.</span>
+                    </p>
+                </div>
+            </div>
+    
+            <!-- ========================================================================================================================= -->
+    
+            <div>
+                <form class="form round">
+                    <div class="">
+                        <input type="email" class="input round" required placeholder="Email address or phone number">
+                    </div>
+                    <div class="">
+                        <input type="password" class="input round" required placeholder="Password">
+                    </div>
+                    <div class="">
+                        <span><button class="btn input round">Log In</button></span>
+                    </div>
+                    <div>
+                        <a href="#" class="forget">Forgotten password?</a>
+                    </div>
+                    <hr>
+                    <div>
+                        <span><a href="#" class="creat round input">Create New Account</a></span>
+                    </div>
+                </form>
+        
+                    <!-- ====================================================================================================================================== -->
+        
+                <div class="sublink">
+                    <p>
+                    <b><a href="#" class="cp">Create a page</a></b> for a celebrity, brand or business.
+                    </p>
+                </div>
+            </div>
+            
+    
+        </div>
+    </div>
+    
+</body>
+</html>
